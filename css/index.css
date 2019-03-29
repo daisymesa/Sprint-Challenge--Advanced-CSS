@@ -155,11 +155,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-@media (max-width: 500px) {
-  p {
-    font-size: 1.5rem;
-  }
-}
 .container {
   max-width: 800px;
   width: 100%;
@@ -183,7 +178,7 @@ p {
 @media (max-width: 500px) {
   .nav-container .nav {
     padding: 8px 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 .nav-container .nav a {
@@ -221,12 +216,15 @@ footer {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .home .space-images {
+    padding: 0 15px;
+  }
   .home .space-images .sky,
   .home .space-images .launch {
     display: none;
   }
   .home .space-images .blast {
-    width: 85%;
+    width: 100%;
     margin: 20px auto;
   }
 }
@@ -255,7 +253,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
-    padding: 0 20px;
+    padding: 0 15px;
     margin-top: 20px;
   }
 }
@@ -282,12 +280,21 @@ footer {
   font-size: 1.75rem;
   border-radius: 5px;
   text-align: center;
-  padding: 8px 0;
 }
 .home .walk .walk-text .btn:hover {
   background: #F6F6F6;
   color: #22283A;
   border: solid 2px #22283A;
+}
+.home .walk .walk-text .btn p {
+  padding: 5% 0;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 63px;
+    margin-bottom: 15px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -295,7 +302,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
   }
 }

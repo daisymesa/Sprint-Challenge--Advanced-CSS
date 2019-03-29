@@ -4,6 +4,11 @@
     border: solid red;
 }
 
+.center-vertically() {
+    display: flex;
+    align-items: center;
+  }
+
 .default-button(@width: 100px; @bgcolor: @btn-bg-color; @fontcolor: @wild-sand) {
     width: @width;
     background-color: @bgcolor;
@@ -14,7 +19,7 @@
     font-size: 1.75rem;
     border-radius: 5px;
     text-align: center;
-    padding: 8px 0;
+    // .center();
 
     &:hover {
         background: @fontcolor;
@@ -22,3 +27,4 @@
         border: solid 2px @bgcolor;
     }
 }
+
