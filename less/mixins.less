@@ -9,6 +9,11 @@
     align-items: center;
   }
 
+  .center-horizontally() {
+    display: flex;
+    justify-content: center;
+  }
+
 .default-button(@width: 100px; @bgcolor: @btn-bg-color; @fontcolor: @wild-sand) {
     width: @width;
     background-color: @bgcolor;
@@ -19,7 +24,6 @@
     font-size: 1.75rem;
     border-radius: 5px;
     text-align: center;
-    // .center();
 
     &:hover {
         background: @fontcolor;

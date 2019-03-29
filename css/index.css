@@ -162,10 +162,10 @@ p {
 }
 .nav-container {
   background: #F6F6F6;
-  width: 100%;
   border-bottom: #F1F1F1;
 }
 .nav-container .logo-heading {
+  color: #23293B;
   font-size: 4rem;
   text-align: center;
   padding: 10px 0;
@@ -185,6 +185,19 @@ p {
   color: #454A59;
   text-decoration: none;
   padding: 0 12px;
+}
+nav a:hover {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #454A59;
+  }
+  100% {
+    background-color: #454A59;
+    color: #F6F6F6;
+    border-radius: 10px;
+  }
 }
 footer {
   color: #22283B;
@@ -289,6 +302,13 @@ footer {
 .home .walk .walk-text .btn p {
   padding: 5% 0;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn a:hover {
+  color: black;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -310,4 +330,50 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .subscribe-intro {
+  padding-top: 25px;
+}
+.home .contact-form {
+  padding-top: 25px;
+}
+.home .contact-form button {
+  width: 100px;
+  background-color: #22283A;
+  color: #F6F6F6;
+  cursor: pointer;
+  height: 35px;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.home .contact-form button:hover {
+  background: #F6F6F6;
+  color: #22283A;
+  border: solid 2px #22283A;
+}
+.home .contact-form form {
+  font-size: 1.5rem;
+  width: 600px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 20px;
+  margin: 25px auto 40px;
+}
+.home .contact-form form .form-text {
+  width: 500px;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.home .contact-form form .message-text {
+  width: 500px;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
