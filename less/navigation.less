@@ -1,1 +1,48 @@
 // Navigation code here
+
+.nav-container {
+    background: @nav-bg;
+    border-bottom: @nav-border;
+
+    .logo-heading {
+        color: @header-font-color;
+        font-size: 4rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav {
+        padding: 10px 0;
+        font-size: 1.75rem;
+        text-align: center;
+
+        @media @phone {
+            padding: 8px 0;
+            font-size: 1.6rem;
+        }
+
+        a {
+            color: @nav-font;
+            text-decoration: none;
+            padding: 0 12px;
+        }
+    }
+}
+
+
+// STRETCH GOAL: ADD CSS ANIMATIONS
+
+nav a:hover {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: @river-bend;
+    }
+    100% {
+      background-color: @river-bend;
+      color: @wild-sand;
+      border-radius: 10px;
+    }
+  }

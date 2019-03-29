@@ -1,1 +1,34 @@
 // Mixins Here
+
+.test () {
+    border: solid red;
+}
+
+.center-vertically() {
+    display: flex;
+    align-items: center;
+  }
+
+  .center-horizontally() {
+    display: flex;
+    justify-content: center;
+  }
+
+.default-button(@width: 100px; @bgcolor: @btn-bg-color; @fontcolor: @wild-sand) {
+    width: @width;
+    background-color: @bgcolor;
+    color: @fontcolor;
+    
+    cursor: pointer;
+    height: 35px;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    text-align: center;
+
+    &:hover {
+        background: @fontcolor;
+        color: @bgcolor;
+        border: solid 2px @bgcolor;
+    }
+}
+
