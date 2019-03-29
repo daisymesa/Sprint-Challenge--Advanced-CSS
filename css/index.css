@@ -160,6 +160,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  background: #F6F6F6;
+  width: 100%;
+}
+.nav-container .logo-heading {
+  font-size: 4rem;
+  text-align: center;
+  padding: 10px 0;
+}
+.nav-container .nav {
+  padding: 10px 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.nav-container .nav a {
+  color: #454A59;
+  text-decoration: none;
+  padding: 0 12px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
