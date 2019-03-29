@@ -3,3 +3,22 @@
 .test () {
     border: solid red;
 }
+
+.default-button(@width: 100px; @bgcolor: @btn-bg-color; @fontcolor: @wild-sand) {
+    width: @width;
+    background-color: @bgcolor;
+    color: @fontcolor;
+    
+    cursor: pointer;
+    height: 35px;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 0;
+
+    &:hover {
+        background: @fontcolor;
+        color: @bgcolor;
+        border: solid 2px @bgcolor;
+    }
+}
