@@ -155,6 +155,11 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+@media (max-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -174,6 +179,12 @@ p {
   padding: 10px 0;
   font-size: 1.75rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .nav-container .nav {
+    padding: 8px 0;
+    font-size: 1.5rem;
+  }
 }
 .nav-container .nav a {
   color: #454A59;
@@ -199,10 +210,25 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 85%;
+    margin: 20px auto;
+  }
 }
 .home .space-images img {
   width: 28%;
